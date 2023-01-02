@@ -48,6 +48,7 @@ function Mobile() {
     }
     placement='top'
     arrow
+    enterTouchDelay={0}
     >
       <Avatar style={{marginTop:'20px', backgroundColor:'hsl(205, 73%, 81%)'}}  p={2}  >
           <Box  component='img'    src={share} />
