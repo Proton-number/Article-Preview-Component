@@ -10,9 +10,16 @@ import '/src/components/Mobile/Mobile.css'
 
 function Mobile() {
   return (
-    <Paper  id='mobile-view' sx={{width: '20.8em'}}>
+    <Paper  
+    id='mobile-view' 
+    sx={{
+        width:{
+           xs: '20em'
+        } , 
+        borderRadius:'24px'
+        }}>
       
-      <Box component='img' sx={{width:'332px', height:'200px'}} src={drawers} />
+      <Box component='img' sx={{width:'332px', height:'200px', borderTopLeftRadius:'24px', borderTopRightRadius:'24px'}} src={drawers} />
 
       <Stack p={3} spacing={2}>
        
@@ -39,11 +46,11 @@ function Mobile() {
   
                   <Tooltip 
     title={
-    <Stack direction='row' p={1} spacing={3}  >
-    <Typography variant='subtitle1' sx={{marginTop:'10px'}}>SHARE</Typography>
-    <Avatar src={facebook} />
-    <Avatar src={twitter} />
-    <Avatar src={pinterest} />
+    <Stack direction='row' p={{xs:1}}    spacing={1}  >
+    <Typography variant='subtitle1' >SHARE</Typography>
+    <Avatar sx={{width:'20px', height:'20px'}}  src={facebook} />
+    <Avatar  sx={{width:'20px', height:'20px'}}  src={twitter} />
+    <Avatar  sx={{width:'20px', height:'20px'}}  src={pinterest} />
     </Stack>
     }
     placement='top'

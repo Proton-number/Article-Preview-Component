@@ -22,7 +22,8 @@ function Desktop() {
         width:{
             sm: '44em', //600
             lg: '63em' //1200s
-        }
+        },
+        borderRadius:'24px'
     }}
     id='desktop-view'
     >
@@ -44,7 +45,9 @@ function Desktop() {
         },
         height:{
             lg: '440px' //1200
-        }
+        },
+        borderTopLeftRadius:'24px',
+        borderBottomLeftRadius:'24px'
        }}
        />
 
@@ -87,7 +90,7 @@ function Desktop() {
   
   <Tooltip 
   title={
-  <Stack direction='row' p={3} spacing={3}  >
+  <Stack direction='row'  p={3} spacing={3}  >
   <Typography variant='subtitle1' sx={{marginTop:'10px'}}>SHARE</Typography>
   <Avatar src={facebook} />
   <Avatar src={twitter} />
