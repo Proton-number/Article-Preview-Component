@@ -13,9 +13,7 @@ function Mobile() {
     <Paper  
     id='mobile-view' 
     sx={{
-        width:{
-           xs: '20em'
-        } , 
+        width:'20em',
         borderRadius:'24px'
         }}>
       
@@ -27,7 +25,7 @@ function Mobile() {
        <Typography>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</Typography>
 
        
-      <Stack  direction='row' spacing={2.4}>
+      <Stack  direction='row' spacing={1.8}>
         
         <Avatar sx={{marginTop:'20px'}} src={michelle}/>
             
@@ -46,7 +44,7 @@ function Mobile() {
   
                   <Tooltip 
     title={
-    <Stack direction='row' p={{xs:1}}    spacing={1}  >
+    <Stack direction='row' p={1}    spacing={1}  >
     <Typography variant='subtitle1' >SHARE</Typography>
     <Avatar sx={{width:'20px', height:'20px'}}  src={facebook} />
     <Avatar  sx={{width:'20px', height:'20px'}}  src={twitter} />
